@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>MyConference</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="selectRoom">
+		<div class="label">
+			<label><h1>Room Id for Video Chat</h1></label>
+		</div>
+		<div class="inputR">
+			<div class="rInput">
+				<input type="text" id="roomNumber" placeholder="Enter Room ID here...">
+			</div>
+			<div class="subButton">
+				<img id="goRoom" src="go1.png">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="consultingRoom">
+			<div class="me">
+				<video id="localVideo" autoplay></video>
+			</div>
+			<div class="you">
+				<video id="remoteVideo" autoplay></video>
+			</div>
+		</div>
+		<!-- <button id="muteButton">Mute</button> -->
+		<div id="chats">
+			<div class="bar"><h3>Wanna Chat Something?</h3>
+				<input type="text" id="inputCallName">
+				<button id="setName"><img src="msg1.png"></button>
+			</div>
+			<div id="msgs">
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

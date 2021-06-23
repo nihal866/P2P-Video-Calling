@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+body{
+	background-color: darkslateblue;
+}
+
+#selectRoom{
+	padding: 1rem;
+	text-align: center;
+}
+
+#selectRoom .inputR{
+	display: flex;
+	justify-content: center;
+	padding-top: 0.5rem;
+}
+
+.rInput, .subButton{
+	padding: 0 0.5rem;
+}
+
+.label h1{
+	font-family: 'Stint Ultra Condensed', cursive;
+	background-color: #7f848a;
+	display: inline-block;
+	font-size: 2rem;
+	word-spacing: 0.2rem;
+	color: white;
+	padding: 0.3rem;
+	border-radius: 1rem;
+}
+
+.rInput input{
+	width: 10rem;
+	box-shadow: 1.5rem 1.5rem 1.5rem grey;
+	border: solid;
+	border-radius: 2.5rem;
+	color: grey;
+	outline: none;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.subButton img{
+	width: 2rem;
+	cursor: pointer;
+	outline: none;
+	transition: transform 0.5s;
+}
+
+.subButton img:hover {
+	transform: scale(1.2);
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	background-color: lightslategray;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1rem;
+	border-radius: 1rem;
+}
+
+.container #consultingRoom{
+	display: none;
+	margin: 1rem 0;
+	width: 70%;
+	float: left;
+	padding: 1rem;
+	position: relative;
+}
+
+#consultingRoom #localVideo{
+	padding-top: 3rem;
+	z-index: 1;
+	border-radius: 20%;
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	width: 20%;
+}
+
+#consultingRoom #localVideo:hover{
+	opacity: 0.5;
+	cursor: pointer;
+	border-radius: 0%;
+}
+
+#consultingRoom #remoteVideo{
+	padding-top: 3rem;
+	z-index: -1;
+	width: 80%;
+}
+
+.container #chats{
+	display: none;
+	width: 25%;
+	margin: 1rem 0;
+	float: right;
+	text-align: center;
+}
+
+#chats .bar{
+	background-color: #75a364;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+#chats h3{
+	font-size: 1rem;
+}
+
+#chats input{
+	border: none;
+	padding: 0.8rem;
+	border-radius: 2rem;
+	color: grey;
+	outline: none;
+	box-shadow: .5rem .5rem 2rem grey;
+	width: -webkit-fill-available;
+}
+
+#chats button{
+	vertical-align: middle;
+	border: none;
+	background-color: #75a364;
+	outline: none;
+	border-radius: 5rem;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+#chats button img{
+	width: 2rem;
+	border-radius: inherit;
+}
+
+#chats button:hover {
+	transform: scale(1.5);
+}
+
+#msgs{
+	width: 95%;
+	height: 20rem;
+	background-color: #5a72;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	overflow: auto;
+}
+
+#myMsg{
+	margin-top: 0.5rem;
+	padding-left: 1rem;
+	font-size: 1.2rem;
+	background-color: seagreen;
+	text-align: left;
+	border: none;
+	opacity: 0.8;
+	font-family: 'Dancing Script', cursive;
+}
+
+#yourMsg{
+	opacity: 0.8;
+	margin-top: 0.5rem;
+	padding-right: 1rem;
+	font-size: 1.2rem;
+	background-color: teal;
+	text-align: right;
+	border: none;
+	font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+	html{
+		font-size: 55%;
+	}
+	.container #consultingRoom{
+		width: 100%;
+	}
+	.container #chats{
+		width: 100%;
+	}
+	.container{
+		display: block;
+		background: url();
+	}
+}
+
+@media(max-width: 400px) {
+	html{
+		font-size: 47%;
+	}
+}
